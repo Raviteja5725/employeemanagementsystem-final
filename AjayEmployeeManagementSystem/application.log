@@ -1,0 +1,36 @@
+2022-11-11 15:15:51.287  INFO 10428 --- [main] c.e.EmployeeManagementSystemApplication  : Starting EmployeeManagementSystemApplication using Java 17.0.4.1 on INDD-8G4YXC2 with PID 10428 (C:\Users\ADevaraju\Desktop\1st Project\AjayEmployeeManagementSystem\target\classes started by ADevaraju in C:\Users\ADevaraju\Desktop\1st Project\AjayEmployeeManagementSystem)
+2022-11-11 15:15:51.290  INFO 10428 --- [main] c.e.EmployeeManagementSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 15:15:52.098  INFO 10428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-11 15:15:52.155  INFO 10428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-11-11 15:15:52.417  INFO 10428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$faf4097] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 15:15:52.480  INFO 10428 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-11-11 15:15:52.720  INFO 10428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 15:15:52.730  INFO 10428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 15:15:52.731  INFO 10428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-11 15:15:52.934  INFO 10428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 15:15:52.934  INFO 10428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1593 ms
+2022-11-11 15:15:53.077  INFO 10428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-11 15:15:53.129  INFO 10428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-11 15:15:53.286  INFO 10428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-11 15:15:53.389  INFO 10428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-11 15:15:53.685  INFO 10428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-11 15:15:53.702  INFO 10428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-11 15:15:54.341  INFO 10428 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-11 15:15:54.350  INFO 10428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 15:15:55.495  INFO 10428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 15:15:55.746  INFO 10428 --- [main] c.e.EmployeeManagementSystemApplication  : Started EmployeeManagementSystemApplication in 4.83 seconds (JVM running for 5.641)
+2022-11-11 15:16:15.475  INFO 10428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 15:16:15.476  INFO 10428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 15:16:15.477  INFO 10428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 15:16:15.503  INFO 10428 --- [http-nio-8080-exec-1] c.e.controller.EmployeeController        :  Controller class : getAllEmployees Method Working :Successfully 
+2022-11-11 15:16:15.503  INFO 10428 --- [http-nio-8080-exec-1] c.e.service.EmployeeService              : EmployeeService : getAllEmployees : Working Successfully 
+2022-11-11 15:18:56.489  INFO 10428 --- [http-nio-8080-exec-5] c.e.controller.EmployeeController        :  Controller Class : Update Employee method  working : Based on 1
+2022-11-11 15:18:56.532  INFO 10428 --- [http-nio-8080-exec-5] c.e.service.EmployeeService              : EmployeeService : updateEmployee : Working Successfully 1
+2022-11-11 15:19:35.592  INFO 10428 --- [http-nio-8080-exec-6] c.e.controller.EmployeeController        :  Controller Class : Update Employee method  working : Based on 8
+2022-11-11 15:19:35.609  WARN 10428 --- [http-nio-8080-exec-6] c.e.controller.EmployeeController        : Controller class : Exception handled inside getEmployeeById Method 
+2022-11-11 15:21:34.294  INFO 10428 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-11 15:21:34.308  INFO 10428 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-11 15:21:34.310  INFO 10428 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-11 15:21:34.317  INFO 10428 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-11 15:21:34.319  INFO 10428 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-11 15:21:34.327  INFO 10428 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,32 @@
+@PostMapping("/upload")
+      public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file, Employee emp) {
+        String message = "";
+        try {
+            employeeServiceInterface.store(file, emp);
+
+          message = "Uploaded the file successfully: " + file.getOriginalFilename();
+          return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
+        } catch (Exception e) {
+          message = "Could not upload the file: " + file.getOriginalFilename() + "!";
+          return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseMessage(message));
+        }
+     }
+
+public Employee store(MultipartFile file , Employee employee) throws IOException {
+         
+            String fileName = "";
+            Employee savingEmployee = new Employee(fileName, file.getContentType(), file.getBytes());
+            savingEmployee.setFirstName(employee.getFirstName());
+            savingEmployee.setLastName(employee.getLastName());
+            savingEmployee.setEmail(employee.getEmail());
+            savingEmployee.setDateOfBirth(employee.getDateOfBirth());
+            savingEmployee.setPhone(employee.getPhone());
+            
+           
+            employee= employeeRepository.save(savingEmployee);
+            savingEmployee.setESTUATE_ID("EST-"+employee.getEmpId());
+            savingEmployee.setFileName(employee.getESTUATE_ID()+" "+employee.getFirstName());
+            
+            return employeeRepository.save(savingEmployee);
+          }
+
